@@ -1,0 +1,8 @@
+.vs/
+bin/
+obj/
+*.user
+logs/
+.idea/
+Platform/build/
+PokerDeploy/config.json
