@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Project\\DotNetLearning\\DotNetLearning\\DotNetLearning\\DotNetLearning.csproj": {}
+  },
+  "projects": {
+    "C:\\Project\\DotNetLearning\\DotNetLearning\\DotNetLearning\\DotNetLearning.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Project\\DotNetLearning\\DotNetLearning\\DotNetLearning\\DotNetLearning.csproj",
+        "projectName": "DotNetLearning",
+        "projectPath": "C:\\Project\\DotNetLearning\\DotNetLearning\\DotNetLearning\\DotNetLearning.csproj",
+        "packagesPath": "C:\\Users\\Oles\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\DotNetLearning\\DotNetLearning\\DotNetLearning\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Oles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

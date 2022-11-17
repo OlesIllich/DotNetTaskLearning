@@ -1,0 +1,15 @@
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\bin\Debug\net6.0\DotNetLearning.exe
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\bin\Debug\net6.0\DotNetLearning.deps.json
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\bin\Debug\net6.0\DotNetLearning.runtimeconfig.json
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\bin\Debug\net6.0\DotNetLearning.dll
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\bin\Debug\net6.0\DotNetLearning.pdb
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\obj\Debug\net6.0\DotNetLearning.csproj.AssemblyReference.cache
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\obj\Debug\net6.0\DotNetLearning.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\obj\Debug\net6.0\DotNetLearning.AssemblyInfoInputs.cache
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\obj\Debug\net6.0\DotNetLearning.AssemblyInfo.cs
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\obj\Debug\net6.0\DotNetLearning.csproj.CoreCompileInputs.cache
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\obj\Debug\net6.0\DotNetLearning.dll
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\obj\Debug\net6.0\refint\DotNetLearning.dll
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\obj\Debug\net6.0\DotNetLearning.pdb
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\obj\Debug\net6.0\DotNetLearning.genruntimeconfig.cache
+C:\Project\DotNetLearning\DotNetLearning\DotNetLearning\obj\Debug\net6.0\ref\DotNetLearning.dll
