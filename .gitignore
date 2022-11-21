@@ -1,8 +1,4 @@
-.vs/
+.vs/*
 bin/
 obj/
-*.user
-logs/
-.idea/
-Platform/build/
-PokerDeploy/config.json
+9781
