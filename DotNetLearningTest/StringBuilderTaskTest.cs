@@ -19,7 +19,8 @@ namespace DotNetLearningTest
         {
             // Act
             // Assert
-            _stringBuilderTask.SetStringBuilder(str1, str2, str3).Should().Be(result);
+            var s = _stringBuilderTask.SetStringBuilder(str1, str2, str3).ToString();
+            s.Should().Be(result);
         }
     }
 }
