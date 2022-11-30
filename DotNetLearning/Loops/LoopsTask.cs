@@ -4,12 +4,15 @@
     {
         public string GetAllExceptA(string str)
         {
-            return string.Empty;
+            str = str.Replace("a", "");
+            return str;
         }
 
         public string ReturnMirror(string str)
         {
-            return string.Empty;
+            char[] chars = str.ToCharArray();
+            Array.Reverse(chars);
+            return new string(chars);
         }
     }
 }
