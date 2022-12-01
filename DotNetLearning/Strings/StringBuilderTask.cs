@@ -10,8 +10,6 @@ namespace DotNetLearning.Strings
             sb.Append(str2);
             sb.Append(str3);
             return sb;
-            string newStr = sb.ToString();  
-            return newStr;
-        }
+         }
     }
 }

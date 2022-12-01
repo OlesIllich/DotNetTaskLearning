@@ -4,22 +4,26 @@
     {
         public char GetFirst(string str)
         {
-            return ' ';
+            char first = str.First();
+            return first;
         }
 
         public int GetStringLength(string str)
         {
-            return 0;
+            int length = str.Length - 1;
+            return length;
         }
 
         public string GetUpperCase(string str)
         {
-            return string.Empty;
+            str = str.ToUpper();
+            return str;
         }
 
         public string Concatenate(string firstStr, string secondStr)
         {
-            return string.Empty;
+            string str = firstStr + secondStr;
+            return str;
         }
     }
 }
