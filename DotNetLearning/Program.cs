@@ -4,6 +4,6 @@ using DotNetLearning.KeyWorlds;
 
 Console.WriteLine("Hello, World!");
 
-//Write all methods, with right and wrong
+//Try to send long to method SetInt, check how boxing and unboxing work
 var keyWordsTask = new KeyWordsTask();
 

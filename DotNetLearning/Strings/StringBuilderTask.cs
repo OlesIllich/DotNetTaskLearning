@@ -6,7 +6,8 @@ namespace DotNetLearning.Strings
     {
         public StringBuilder SetStringBuilder(string str1, string str2, string str3)
         {
-            return null;
+            str1 = "ttt";
+            return new StringBuilder();
         }
     }
 }
