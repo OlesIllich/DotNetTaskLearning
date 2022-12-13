@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Binary_search
 {
-    internal class BinarySearch
+    public class BinarySearch
     {
         static int Search(int[] array, int searchedValue, int left, int right)
         {
