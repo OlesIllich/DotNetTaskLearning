@@ -33,7 +33,7 @@ namespace DotNetLearningTest
 
             // Act
             // Assert
-            _arrayTasks.InvertArray(array).Should().AllBeEquivalentTo(result);
+            _arrayTasks.InvertArray(array).Should().BeEquivalentTo(result);
         }
 
         [Fact]
@@ -58,7 +58,7 @@ namespace DotNetLearningTest
 
             // Act
             // Assert
-            _arrayTasks.ArrayConcatenation(array, secondArray).Should().AllBeEquivalentTo(result);
+            _arrayTasks.ArrayConcatenation(array, secondArray).Should().BeEquivalentTo(result);
         }
 
     }
