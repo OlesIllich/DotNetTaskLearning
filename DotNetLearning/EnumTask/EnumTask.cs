@@ -21,17 +21,20 @@ namespace DotNetLearning.EnumTask
     {
         public DaysOfTheWeek GetFirstDayOfTheWeek()
         {
-            throw new NotImplementedException();
+            DaysOfTheWeek first = (DaysOfTheWeek)0;
+            return first;
         }
 
         public DaysOfTheWeek GetDayOfTheWeek(int index)
         {
-            throw new NotImplementedException();
+            DaysOfTheWeek select = (DaysOfTheWeek)index;
+            return select;
         }
 
         public List<string> GetAllDaysOfTheWeek()
         {
-            throw new NotImplementedException();
+            return Enum.GetValues(typeof(DaysOfTheWeek)).Cast<DaysOfTheWeek>().Cast<string>().ToList();
+            
         }
     }
 }

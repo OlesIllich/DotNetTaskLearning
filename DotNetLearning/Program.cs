@@ -17,3 +17,7 @@ RefTasks refTasks = new RefTasks();
 int value = 5;
 refTasks.RefValueType(ref value);
 Console.WriteLine(value);
+RefTasksParam param= new RefTasksParam();
+refTasks.SimpleReferenceType(param);
+refTasks.RefReferenceType(ref param);
+Console.WriteLine(param);

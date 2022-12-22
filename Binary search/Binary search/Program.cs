@@ -50,7 +50,8 @@ namespace Binary_search
             
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
-            int value = Search2(newArray, searchingValue, newArray[0], newArray.Length);
+            //int value = Search2(newArray, searchingValue, newArray[0], newArray.Length);
+            int value = search.Search(newArray, searchingValue, newArray[0], newArray.Length);
             stopWatch.Stop();
             Console.WriteLine($"We are looking for: {value}");
             Console.WriteLine($"Binary search runing: { stopWatch.Elapsed}") ;
