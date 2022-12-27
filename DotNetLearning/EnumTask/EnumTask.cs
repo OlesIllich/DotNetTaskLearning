@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace DotNetLearning.EnumTask
 {
@@ -32,9 +33,13 @@ namespace DotNetLearning.EnumTask
         }
 
         public List<string> GetAllDaysOfTheWeek()
-        {
-            return Enum.GetValues(typeof(DaysOfTheWeek)).Cast<DaysOfTheWeek>().Cast<string>().ToList();
-            
+        { 
+            List <DaysOfTheWeek> days = Enum.GetValues(typeof(DaysOfTheWeek))
+                            .Cast<DaysOfTheWeek>()
+                            .ToList();
+            var strings = (from o in days select o.ToString()).ToList();
+            return strings;
+
         }
     }
 }

@@ -8,29 +8,29 @@ namespace Binary_search
 {
     public class BinarySearch
     {
-        static int Search(int[] array, int searchedValue, int left, int right)
+        public int Search(int[] inputArray, int key)
         {
-
-            while (left <= right)
+            int min = 0;
+            int max = inputArray.Length - 1;
+            while (min <= max)
             {
-
-                int middle = (left + right) / 2;
-
-                if (searchedValue == array[middle])
+                int mid = (min + max) / 2;
+                if (key == inputArray[mid])
                 {
-                    return middle;
+                    ++mid;
+                    return mid -1 ;
                 }
-                else if (searchedValue < array[middle])
+                else if (key < inputArray[mid])
                 {
-
-                    right = middle - 1;
+                    max = mid - 1;
                 }
                 else
                 {
-                    left = middle + 1;
+                    min = mid + 1;
                 }
             }
             return -1;
         }
     }
+    
 }
