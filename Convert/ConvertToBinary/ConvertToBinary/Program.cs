@@ -4,20 +4,32 @@
     {
         static void Main(string[] args)
         {
-            int n, i;
-            int[] a = new int[100];
-            Console.Write("Enter the number to convert: ");
-            n = int.Parse(Console.ReadLine());
-            for (i = 0; n > 0; i++)
+            Console.WriteLine("Choose operatoin and write 1 or 2");
+            Console.WriteLine("1 - convert decimal to binary");
+            Console.WriteLine("2 - convert binary to decimal");
+            int variant;
+            bool success1 = int.TryParse(Console.ReadLine(), out variant);
+            if (success1) { }
+            else
             {
-                a[i] = n % 2;
-                n = n / 2;
+                Console.WriteLine("It is uncorrect value");
+                return;
             }
-            Console.Write("Binary of the given number= ");
-            for (i = i - 1; i >= 0; i--)
+
+            switch (variant)
             {
-                Console.Write(a[i]);
-            }
+                case 1:
+                ToBinary toBinary = new ToBinary();
+                toBinary.ConvertToBinary();
+                break;
+                case 2:         
+                ToInt toInt = new ToInt();
+                toInt.ConvertToInt();
+                break;
+                default:
+            Console.WriteLine($"I cant understend you)");
+                break;
+        }
         }
     }
 }
