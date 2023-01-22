@@ -18,7 +18,7 @@
 
         }
 
-        public void ThrowMyCustomWithStackTraceException()
+        public void ThrowWithStackTraceException()
         {
 
         }
