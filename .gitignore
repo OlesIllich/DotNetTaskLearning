@@ -3,3 +3,6 @@ bin/
 obj/
 *.user
 */*.vs/*
+*.v2
+Convert/ConvertToBinary/.vs/ProjectEvaluation/converttobinary.metadata.v5.1
+Convert/ConvertToBinary/.vs/ProjectEvaluation/converttobinary.projects.v5.1
