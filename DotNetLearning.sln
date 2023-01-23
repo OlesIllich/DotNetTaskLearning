@@ -9,9 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetLearningTest", "DotNe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickSort", "QuickSort\QuickSort.csproj", "{04EC7A91-7FD6-4326-B263-140A7FB370E8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Car", "Car\Car.csproj", "{9837E7B5-3880-4C3E-A3FC-30C1E1182E13}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "immitation", "immitation\immitation.csproj", "{04995289-A67F-4266-ACB6-DB98C1A3C04D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "immitation", "immitation\immitation.csproj", "{04995289-A67F-4266-ACB6-DB98C1A3C04D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +29,6 @@ Global
 		{04EC7A91-7FD6-4326-B263-140A7FB370E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04EC7A91-7FD6-4326-B263-140A7FB370E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04EC7A91-7FD6-4326-B263-140A7FB370E8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9837E7B5-3880-4C3E-A3FC-30C1E1182E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9837E7B5-3880-4C3E-A3FC-30C1E1182E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9837E7B5-3880-4C3E-A3FC-30C1E1182E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9837E7B5-3880-4C3E-A3FC-30C1E1182E13}.Release|Any CPU.Build.0 = Release|Any CPU
 		{04995289-A67F-4266-ACB6-DB98C1A3C04D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{04995289-A67F-4266-ACB6-DB98C1A3C04D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04995289-A67F-4266-ACB6-DB98C1A3C04D}.Release|Any CPU.ActiveCfg = Release|Any CPU

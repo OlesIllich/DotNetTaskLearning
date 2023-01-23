@@ -1,7 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using DotNetLearning.ExceptionTasks;
 using DotNetLearning.KeyWorlds;
 using DotNetLearning.RefTasks;
+
+ExceptionTasks exception = new ExceptionTasks();
+
+exception.WriteToConsoleInFinally();
 
 Console.WriteLine("Hello, World!");
 
