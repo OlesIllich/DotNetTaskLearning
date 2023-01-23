@@ -8,7 +8,7 @@ namespace ConvertToBinary
 {
     internal class ToBinary
     {
-        public void ConvertToBinary()
+        internal void ConvertToBinary()
         {
             int n, i;
             int[] a = new int[100];

@@ -8,10 +8,16 @@ namespace ConvertToBinary
 {
     internal class ToInt
     {
-        public void ConvertToInt()
+        internal void ConvertToInt()
         {
             Console.Write("Enter the binary number to convert: ");
-            int binaryNumber = int.Parse(Console.ReadLine());
+            int binaryNumber;
+            bool success1 = int.TryParse(Console.ReadLine(), out binaryNumber);
+            while (!success1)
+            {
+                Console.WriteLine("It is uncorrect value");
+                success1 = int.TryParse(Console.ReadLine(), out binaryNumber);
+            }
             int decimalValue = Convert.ToInt32(binaryNumber.ToString(), 2);
             Console.Write($"Decimal Value : {decimalValue} ");
         }

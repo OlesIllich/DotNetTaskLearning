@@ -8,12 +8,11 @@
             Console.WriteLine("1 - convert decimal to binary");
             Console.WriteLine("2 - convert binary to decimal");
             int variant;
-            bool success1 = int.TryParse(Console.ReadLine(), out variant);
-            if (success1) { }
-            else
+            bool success = int.TryParse(Console.ReadLine(), out variant);
+            while (!success)
             {
                 Console.WriteLine("It is uncorrect value");
-                return;
+                success = int.TryParse(Console.ReadLine(), out variant);
             }
 
             switch (variant)

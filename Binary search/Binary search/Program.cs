@@ -7,37 +7,34 @@ namespace Binary_search
         
         static void Main(string[] args)
         {
-            BinarySearch search = new BinarySearch();
+            
             Console.WriteLine("*****Let's try binary search******");
 
             Console.WriteLine("Please, wright first value of Array");
             int startValue;
             bool success1 = int.TryParse(Console.ReadLine(),out startValue);
-            if (success1) { }
-            else
+            while (!success1) 
             {
                 Console.WriteLine("It is uncorrect value");
-                return;
+                success1 = int.TryParse(Console.ReadLine(), out startValue);
             }
 
             Console.WriteLine("Please, enter the number we are looking for");
             int searchingValue; 
             bool success2 = int.TryParse(Console.ReadLine(), out searchingValue);
-            if (success2) { }
-            else
+            while (!success2)
             {
                 Console.WriteLine("It is uncorrect value");
-                return;
+                success2 = int.TryParse(Console.ReadLine(), out searchingValue);
             }
 
             Console.WriteLine("What number of items in array do you want?");
             int lengthOfArray;
             bool success3 = int.TryParse(Console.ReadLine(), out lengthOfArray);
-            if (success3) { }
-            else
+            while (!success3)
             {
                 Console.WriteLine("It is uncorrect value");
-                return ;
+                success3 = int.TryParse(Console.ReadLine(), out lengthOfArray);
             }
 
             if (startValue > searchingValue)
@@ -54,21 +51,31 @@ namespace Binary_search
                     startValue++;
                 }
 
+                var list = new List<SpecificSearch>();
+                var search = new SpecificSearch(new BinarySearch());
+                var search2 = new SpecificSearch(new SimpleSearch());
+                list.Add(search);
+                list.Add(search2);
 
-                Stopwatch stopWatch = new Stopwatch();
-                stopWatch.Start();
-                //int value = Search2(newArray, searchingValue, newArray[0], newArray.Length);
-                int value = search.Search(newArray, searchingValue);
-                stopWatch.Stop();
-                Console.WriteLine($"We are looking for: {value}");
-                Console.WriteLine($"Binary search runing: {stopWatch.Elapsed}");
+                foreach (var item in list)
+                {
+                    var stopWatch = new Stopwatch();
+                    stopWatch.Start();
+                    int seitemValue = item.Search(newArray, searchingValue);
+                    stopWatch.Stop();
+                    Console.WriteLine($"We are looking for: {seitemValue}");
+                    Console.WriteLine($"Binary search runing: {stopWatch.Elapsed}");
+                }
 
-                Stopwatch stopWatch2 = new Stopwatch();
-                stopWatch2.Start();
-                int value2 = Array.IndexOf(newArray, searchingValue);
-                Console.WriteLine($"We are looking for: {value2}");
-                stopWatch2.Stop();
-                Console.WriteLine($"Simple search runing: {stopWatch2.Elapsed}");
+                ArraySum arraySum = new ArraySum();
+                int sum = arraySum.Sum(newArray);
+                Console.WriteLine($"Sum of array elements = {sum}");
+
+                int big;
+                var biggestNum = new BiggestNum();
+                big = biggestNum.FindNum(newArray);
+                Console.WriteLine($"The biggest num is {big}");
+
             }
            
         }

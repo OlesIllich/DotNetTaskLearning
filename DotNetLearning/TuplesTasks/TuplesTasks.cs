@@ -4,22 +4,27 @@
     {
         public (string String, int Number, bool Bool) GetTuple(string firstLetter, int number, bool boolParam)
         {
-            throw new NotImplementedException();
+            
+            var tuple = (firstLetter, number, boolParam);
+            return tuple;
         }
 
         public string GeStringPart(Tuple<string,int,bool> tuple)
         {
-            throw new NotImplementedException();
+            var stringPart = tuple.Item1;
+            return stringPart;
         }
 
         public int GetIntPart(Tuple<string, int, bool> tuple)
         {
-            throw new NotImplementedException();
+            var intPart = tuple.Item2;
+            return intPart;
         }
 
         public bool GetBoolPart(Tuple<string, int, bool> tuple)
         {
-            throw new NotImplementedException();
+            var boolPart = tuple.Item3;
+            return boolPart;
         }
     }
 }

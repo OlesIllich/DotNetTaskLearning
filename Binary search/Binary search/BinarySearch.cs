@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Binary_search
 {
-    public class BinarySearch
+    internal class BinarySearch : SearchBase
     {
-        public int Search(int[] inputArray, int key)
+        internal override int Search(int[] inputArray, int key)
         {
             int min = 0;
             int max = inputArray.Length - 1;
