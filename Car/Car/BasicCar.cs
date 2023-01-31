@@ -15,7 +15,7 @@ namespace Car
         private string _transmission;
         private string _engineSize;
 
-        public Mark Mark { get; }
+        public Mark Mark { get; set; }
         public Model Model { get; set; }
         public Color Color { get; set; }
         public Body Body { get; set; }

@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using System.Diagnostics;
+using System.Linq.Expressions;
 
 namespace DotNetLearning.ExceptionTasks
 {
@@ -12,25 +13,44 @@ namespace DotNetLearning.ExceptionTasks
     {
         public void ThrowBaseException()
         {
-            throw new Exception();
+            ThrowException();
         }
 
         public void ThrowMyCustomWithoutStackTraceException()
         {
-            throw new MyCustomException();
+            try
+            {
+                ThrowException();
+            }
+            catch (Exception)
+            {
+
+                throw new MyCustomException();
+            }
         }
 
-        public void ThrowWithStackTraceException(MyCustomException e)
+        public void ThrowWithStackTraceException()
         {
-         Console.WriteLine(e.StackTrace);   
+            try
+            {
+                ThrowException();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("throw");
+                throw;
+            }
+
+              
+            
         }
 
         public void WriteToConsoleInFinally()
         {
             try
             {
-
-            }
+                ThrowException();
+             }
             finally 
             {
 

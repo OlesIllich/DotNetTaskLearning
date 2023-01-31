@@ -5,8 +5,10 @@ using DotNetLearning.KeyWorlds;
 using DotNetLearning.RefTasks;
 
 ExceptionTasks exception = new ExceptionTasks();
+MyCustomException e = new MyCustomException();
 
-exception.WriteToConsoleInFinally();
+//exception.ThrowWithStackTraceException(e);
+exception.ThrowWithStackTraceException();  
 
 Console.WriteLine("Hello, World!");
 

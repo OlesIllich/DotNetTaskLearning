@@ -13,7 +13,7 @@
 
         public class B : A
         {
-            public virtual new void Method()
+            public override void Method()
             { 
                 Console.WriteLine("B");
             }
@@ -42,6 +42,6 @@
             Console.WriteLine(b2.GetType());
             Console.WriteLine(c.GetType());
 
-        }
+        } 
     }
 }
