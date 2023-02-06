@@ -43,6 +43,10 @@ namespace Car
             sw.Close();
          }
 
+        public override string ToString()
+        {
+            return "car: " + " " + _transmission + " " + _engineSize + " " + Body + " " + Mark + " " + Model + " " + Color;
+        }
 
     }
 }

@@ -22,7 +22,7 @@ namespace DotNetLearning.ExceptionTasks
             {
                 ThrowException();
             }
-            catch (Exception)
+            catch 
             {
 
                 throw new MyCustomException();
