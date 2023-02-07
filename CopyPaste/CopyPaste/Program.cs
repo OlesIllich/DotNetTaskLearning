@@ -1,0 +1,55 @@
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace CopyPaste
+{
+    internal class Program
+    {
+        static void CopyFile()
+        {
+            Console.WriteLine("What file do yo want to copy?");
+
+            //string fileName = "test.txt";
+            string fileName = Console.ReadLine();
+
+            Console.WriteLine("Where it is exist now? Please write the path.");
+
+            //string sourcePath = @"C:\Users\zsirc\OneDrive\Documents\GitHub\DotNetTaskLearning\TestFolder";
+            string sourcePath = Console.ReadLine();
+
+            Console.WriteLine("Where do you want to copy the file? Please write the path.");
+
+            //string targetPath = @"C:\Users\zsirc\OneDrive\Documents\GitHub\DotNetTaskLearning\TestFolder\SubDir";
+            string destinationPath = Console.ReadLine();
+
+
+            // Use Path class to manipulate file and directory paths.
+            string sourceFile = System.IO.Path.Combine(sourcePath, fileName);
+            string destFile = System.IO.Path.Combine(destinationPath, fileName);
+
+            // To copy a folder's contents to a new location:
+            // Create a new target folder.
+            // If the directory already exists, this method does not create a new directory.
+            System.IO.Directory.CreateDirectory(destinationPath);
+
+            // To copy a file to another location and
+            // overwrite the destination file if it already exists.
+            System.IO.File.Copy(sourceFile, destFile, true);
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("*****File manager*****");
+
+            try
+            {
+                CopyFile();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("You wrote uncorrect path or file. Please try again.");
+                CopyFile();
+            }
+
+            Console.WriteLine("Your file was succesfully copied");
+        }
+    }
+}
