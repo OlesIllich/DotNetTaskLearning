@@ -126,9 +126,19 @@
 
             var ownCar = new BasicCar(transmission, (Body)variant5-1, engine, (Mark)variant-1, (Model)variant2 - 1, (Color)variant3 - 1);
             Console.WriteLine(ownCar);
+
             //Console.WriteLine();
             //ownCar.WriteToFileAndConsole();
-            //ownCar.StartEngine(engine);
+            ownCar.StartEngine(engine);
+
+            Console.WriteLine("\n***** Speeding up *****");
+
+            engine.BreakingRisk += () => Console.WriteLine("We can break your car");
+            engine.BreakingCarComplited += ownCar.Overheet;
+
+            ownCar.StartEngine(engine);
+            //engine.Broke();
+
 
         }
     }

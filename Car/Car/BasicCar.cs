@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,7 +11,7 @@ namespace Car
 
     internal class BasicCar
     {
-        
+
         
         private string _transmission;
         private string _engineSize;
@@ -33,6 +34,7 @@ namespace Car
         public void StartEngine(Engine engine)
         {
             engine.Starting();
+            engine.AccelerateEngine();
         }
 
         public void WriteToFileAndConsole()
@@ -47,6 +49,10 @@ namespace Car
         {
             return "car: " + " " + _transmission + " " + _engineSize + " " + Body + " " + Mark + " " + Model + " " + Color;
         }
+
+        public void Overheet() => Console.WriteLine("Your engine was broken!");
+
+
 
     }
 }

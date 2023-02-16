@@ -6,19 +6,28 @@ namespace CopyPaste
     {
         static void CopyFile()
         {
+            Console.WriteLine("Please enter the path to dir wich conteins a file.");
+
+            //C:\Users\zsirc\OneDrive\Documents\GitHub\DotNetTaskLearning\TestFolder
+            string sourcePath = Console.ReadLine();
+
+            string[] filePaths = Directory.GetFiles(sourcePath);
+            for (int i = 0; i < filePaths.Length; ++i)
+            {
+                string path = filePaths[i];
+                Console.WriteLine($"File number {i + 1} - {System.IO.Path.GetFileName(path)}");
+            }
+
             Console.WriteLine("What file do yo want to copy?");
 
             //string fileName = "test.txt";
             string fileName = Console.ReadLine();
 
-            Console.WriteLine("Where it is exist now? Please write the path.");
-
-            //string sourcePath = @"C:\Users\zsirc\OneDrive\Documents\GitHub\DotNetTaskLearning\TestFolder";
-            string sourcePath = Console.ReadLine();
+                               
 
             Console.WriteLine("Where do you want to copy the file? Please write the path.");
 
-            //string targetPath = @"C:\Users\zsirc\OneDrive\Documents\GitHub\DotNetTaskLearning\TestFolder\SubDir";
+            //string targetPath =   C:\Users\zsirc\OneDrive\Documents\GitHub\DotNetTaskLearning\TestFolder\SubDir
             string destinationPath = Console.ReadLine();
 
 
@@ -29,7 +38,7 @@ namespace CopyPaste
             // To copy a folder's contents to a new location:
             // Create a new target folder.
             // If the directory already exists, this method does not create a new directory.
-            System.IO.Directory.CreateDirectory(destinationPath);
+            //System.IO.Directory.CreateDirectory(destinationPath);
 
             // To copy a file to another location and
             // overwrite the destination file if it already exists.
@@ -43,9 +52,9 @@ namespace CopyPaste
             {
                 CopyFile();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                Console.WriteLine("You wrote uncorrect path or file. Please try again.");
+                Console.WriteLine(e.Message);
                 CopyFile();
             }
 

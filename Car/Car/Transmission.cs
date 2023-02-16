@@ -9,5 +9,11 @@ namespace Car
     internal class Transmission
     {
         internal virtual string Type { get; }
+
+        public void TransmissionBreak()
+            {
+            Console.WriteLine("Transmission is broken");
+        }
     }
+
 }
