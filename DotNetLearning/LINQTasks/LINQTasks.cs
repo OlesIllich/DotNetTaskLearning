@@ -19,22 +19,25 @@ namespace DotNetLearning.LINQTasks
     {
         public List<LINQTestData> OnlyPositiveFirstValue(List<LINQTestData> dataList)
         {
-            throw new NotImplementedException();
+            return dataList.Where(c => c.FirstValue > 0).Select(c => c).ToList();
+            
         }
-
+        
         public int FirstValueSecondValueSum(List<LINQTestData> dataList)
         {
-            throw new NotImplementedException();
+           var first =  dataList.Select(c =>c);
+            return first.ToList().Sum(x => x.SecondValue);
         }
 
         public bool IsEmpty(List<LINQTestData> dataList)
         {
-            throw new NotImplementedException();
+            return !dataList.Select(c => c).Any();
         }
 
         public List<DateTime> ReturnDateTimeList(List<LINQTestData> dataList)
         {
-            throw new NotImplementedException();
+            var result = dataList.Select(c=> c.DateTime);
+            return result.ToList();
         }
     }
 }

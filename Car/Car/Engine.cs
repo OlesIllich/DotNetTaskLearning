@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Car
 {
-    internal  class Engine
+    internal class Engine : IBreakingRisk
     {
-        Action BreakingCar;
         public event Action BreakingCarComplited;
         public event Action BreakingRisk;
 
-        
+
         internal virtual string Size { get; }
         internal virtual void Starting() => Console.WriteLine("Let's go!!!");
 

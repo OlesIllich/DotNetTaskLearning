@@ -2,7 +2,13 @@
 
 using DotNetLearning.ExceptionTasks;
 using DotNetLearning.KeyWorlds;
+using DotNetLearning.LINQTasks;
 using DotNetLearning.RefTasks;
+
+LINQTasks lINQTasks = new LINQTasks();
+var LINQTestData = new List<LINQTestData>();
+lINQTasks.IsEmpty(LINQTestData);
+
 
 ExceptionTasks exception = new ExceptionTasks();
 MyCustomException e = new MyCustomException();

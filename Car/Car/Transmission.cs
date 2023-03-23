@@ -6,13 +6,20 @@ using System.Threading.Tasks;
 
 namespace Car
 {
-    internal class Transmission
+    public class Transmission : IBreakingRisk
     {
+        public event Action BreakingRisk;
+
         internal virtual string Type { get; }
 
         public void TransmissionBreak()
             {
             Console.WriteLine("Transmission is broken");
+        }
+
+        public void Broke()
+        {
+
         }
     }
 

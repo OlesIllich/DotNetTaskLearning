@@ -29,7 +29,12 @@ namespace Car
             Color = color;
             _transmission = transmission.Type;
             _engineSize = engine.Size;
+
+            engine.BreakingRisk  += () => Console.WriteLine("We can break your car") ;
+            transmission.BreakingRisk += Overheet;
         }
+
+      
 
         public void StartEngine(Engine engine)
         {
